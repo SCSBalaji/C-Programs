@@ -1,3 +1,5 @@
+/* Basic Simple Interest Calculator*/
+
 #include<stdio.h>
 int main()
 {
