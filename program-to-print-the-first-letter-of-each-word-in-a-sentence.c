@@ -6,8 +6,8 @@ int main()
 {
     char a[100];     
     int i;
-    printf("Enter a Sentence :\n");
-    gets(a);            /* Because we are taking string as input. If we take scanf it will take only till the first blank space called NULL character only. It leaves all the remaining sentence.*/
+    printf("Enter a Sentence :\t");
+    gets(a);                                /* Because we are taking string as input. If we take scanf it will take only till the first blank space called NULL character only. It leaves all the remaining sentence.*/
     for ( i = 0; i < strlen(a); i++)        // Loop through the entire string
     {
         if (i == 0 && a[i] != ' ')          // Check if the first character is not a space, if not a space then print it
