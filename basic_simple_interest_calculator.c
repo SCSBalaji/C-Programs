@@ -1,4 +1,5 @@
 /* Basic Simple Interest Calculaor*/
+// 12 September, 2024
 
 #include<stdio.h>
 int main()

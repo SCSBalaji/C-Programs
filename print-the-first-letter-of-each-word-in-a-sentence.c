@@ -1,4 +1,5 @@
 /* Program to Print the First Letter of Each Word in a Sentence */
+// 11 September, 2024
 
 #include<stdio.h>
 #include<string.h>      // for string functions
