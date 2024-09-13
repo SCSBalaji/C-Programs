@@ -8,14 +8,15 @@ Write a program to calculate his gross salary.*/
 #include<stdio.h>
 int main()
 {
-    float basic_salary, dearness_allowance, house_rent_allowance, gross_pay;
-    printf("Enter Basic Salary:\t");
-    scanf("%f",&basic_salary);
+    float basic_salary, dearness_allowance, house_rent_allowance, gross_pay;        // Variable declaration
+    printf("Enter Basic Salary:\t");        // Prompt the user to enter basic salary
+    scanf("%f",&basic_salary);              // Read the input from the user
 
     dearness_allowance = 0.4 * basic_salary;        // Calculate Dearness Allowance (40% of basic salary)
     house_rent_allowance = 0.2 * basic_salary;      // Calculate House Rent Allowance (20% of basic salary)
     gross_pay = basic_salary + dearness_allowance + house_rent_allowance;       // Calculate Gross Pay (sum of basic salary, dearness allowance, and house rent allowance)
     
+    // Output the calculated values
     printf("Basic Salary = %f\n",basic_salary);
     printf("Dearness Allownace = %f\n",dearness_allowance);
     printf("House Rent Allowance = %f\n",house_rent_allowance);

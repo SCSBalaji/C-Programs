@@ -7,16 +7,16 @@ Write a program to convert and print this distance in meters, feet, inches and c
 #include<stdio.h>
 int main()
 {
-    float kilometer, meter, feet, inch, centimeter;
-    printf("Enter the distance in Kilometers:\t");
-    scanf("%f",&kilometer);
+    float kilometer, meter, feet, inch, centimeter;         // Variable declaration
+    printf("Enter the distance in Kilometers:\t");          // Prompt the user to enter distance in kilometers
+    scanf("%f",&kilometer);                                 // Read the input distance in kilometers
 
     meter = kilometer * 1000;           // Convert the distance from kilometers to meters
     centimeter = meter * 100;           // Convert the distance from meters to centimeters
     inch = centimeter / 2.54;           // Convert the distance from centimeters to inches
     feet = inch / 12;                   // Convert the distance from inches to feet
     
-
+    // Output the converted distances
     printf("The Distance in meter = \t %f meters\n",meter);
     printf("The Distance in centimeter = \t %f centimeters\n",centimeter);
     printf("The Distance in feet = \t %f feet\n",feet);

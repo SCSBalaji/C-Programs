@@ -8,14 +8,16 @@ Assume that the maximum marks that can be obtained by a student in each subject 
 #include<stdio.h>
 int main()
 {
-    int marks1, marks2, marks3, marks4, marks5, aggregate;
+    int marks1, marks2, marks3, marks4, marks5, aggregate;          // Variable declaration
     float percentage;
-    printf("Enter the marks of 5 subjects:\t");
-    scanf("%d %d %d %d %d",&marks1, &marks2, &marks3, &marks4, &marks5);
+
+    printf("Enter the marks of 5 subjects:\t");             // Prompt the user to enter marks for 5 subjects
+    scanf("%d %d %d %d %d",&marks1, &marks2, &marks3, &marks4, &marks5);        // Read the input marks for each subject
 
     aggregate = marks1 + marks2 + marks3 + marks4 + marks5;     // Calculate the aggregate marks (sum of all subject marks)
     percentage = aggregate / 5.0;     // Calculate the percentage (aggregate divided by 5). Use 5.0 to ensure floating-point division
 
+    // Output the aggregate and percentage
     printf("Aggregate Marks = %d\n",aggregate);
     printf("Percentage Marks = %.2f\n",percentage);            // Display percentage with 2 decimal places
     
