@@ -18,13 +18,9 @@ int main()
 
     // Check if the quantity is greater than or equal to 1000 to apply a discount
     if (quantity >= 1000)
-    {
         discount = 10;      // 10% discount for orders of 1000 or more items
-    }
     else
-    {
         discount = 0;       // No discount for orders less than 1000 items
-    }
 
     total = (quantity * price) - (quantity * price * discount / 100);       // Calculate the total expenses after applying the discount
     
